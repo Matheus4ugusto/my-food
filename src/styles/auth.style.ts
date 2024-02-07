@@ -1,4 +1,5 @@
 import styled from "styled-components/native";
+import {Link} from "expo-router";
 
 export const AuthContainer = styled.View`
   flex: 1;
@@ -33,6 +34,7 @@ export const AuthButton = styled.TouchableOpacity`
   background-color: #E7562AFF;
   padding: 10px;
   border-radius: 5px;
+  margin-top: 10px;
 `;
 
 export const AuthFormDivider = styled.View`
@@ -48,4 +50,8 @@ export const FormBox = styled.View`
   margin: auto;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px;
+`;
+
+export const AuthLink = styled(Link)`
+  color: #E7562AFF;
 `;
