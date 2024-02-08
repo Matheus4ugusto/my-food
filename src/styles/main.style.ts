@@ -6,8 +6,8 @@ export const Container = styled.View`
 `
 
 export const Flex = styled.View<FlexStyle>`
-  flex-direction: ${({direction}) => direction ? direction : "row"};
   justify-content: ${({justifyContent}) =>
           justifyContent ? justifyContent : "start"};
   align-items: ${({alignItems}) => (alignItems ? alignItems : "start")};
+  flex-wrap: ${({flexWrap}) => flexWrap};
 `;

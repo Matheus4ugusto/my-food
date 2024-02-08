@@ -1,5 +1,7 @@
 import {Tabs} from "expo-router";
 import Icon from "react-native-vector-icons/Ionicons";
+import IconEntypo from "react-native-vector-icons/Entypo";
+
 
 export default function MainLayout() {
     return (
@@ -17,6 +19,21 @@ export default function MainLayout() {
                     headerTintColor: "#E7562AFF"
                 }}
             />
+            <Tabs.Screen name="stores/index" options={{
+                title: "Lojas",
+                tabBarShowLabel: false,
+                headerTintColor: "#E7562AFF",
+                headerTitleAlign: "left",
+                tabBarIcon: () => <IconEntypo name="shop" color="#E7562AFF" size={28}/>
+            }}/>
+
+            <Tabs.Screen name="products/index" options={{
+                title: "Produtos",
+                tabBarShowLabel: false,
+                headerTintColor: "#E7562AFF",
+                headerTitleAlign: "left",
+                tabBarIcon: () => <Icon name="fast-food-sharp" color="#E7562AFF" size={28}/>
+            }}/>
         </Tabs>
     )
 }

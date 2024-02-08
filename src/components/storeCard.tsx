@@ -3,7 +3,7 @@ import {Image, Text, View} from "react-native";
 import {Flex} from "../styles/main.style";
 import Icon from "react-native-vector-icons/FontAwesome";
 
-export const StoreCard = () => {
+const StoreCard = () => {
     return (
         <StoreCardBox>
             <View>
@@ -19,3 +19,5 @@ export const StoreCard = () => {
         </StoreCardBox>
     );
 }
+
+export default StoreCard
