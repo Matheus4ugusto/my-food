@@ -1,6 +1,7 @@
 import styled from "styled-components/native";
 
-export const StoreCardBox = styled.View`
+export const StoreCardBox = styled.Pressable`
+  display: flex;
   flex-direction: row;
   gap: 10px;
   align-items: center;

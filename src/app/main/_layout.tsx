@@ -34,6 +34,7 @@ export default function MainLayout() {
                 headerTitleAlign: "left",
                 tabBarIcon: () => <Icon name="fast-food-sharp" color="#E7562AFF" size={28}/>
             }}/>
+            <Tabs.Screen name="stores/[id]/index" options={{href: null, headerShown: false, tabBarShowLabel: false}}/>
         </Tabs>
     )
 }
