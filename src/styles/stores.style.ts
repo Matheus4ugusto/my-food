@@ -8,7 +8,7 @@ export const StoreCardBox = styled.Pressable`
   width: 50%;
 `;
 
-export const ProductCardBox = styled.View`
+export const ProductCardBox = styled.Pressable`
   flex-direction: row;
   gap: 5px;
   border: 1px solid #e0e0e0;
@@ -16,3 +16,12 @@ export const ProductCardBox = styled.View`
   padding-right: 5px;
   width: 100%;
 `
+export const BuyButton = styled.TouchableOpacity`
+  background-color: #e7562aff;
+  padding-block: 20px;
+  padding-top: 10px;
+  width: 80%;
+  padding-bottom: 10px;
+  align-self: center;
+  border-radius: 20px;
+`;
